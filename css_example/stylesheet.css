@@ -1,0 +1,52 @@
+* {
+    margin: 10px;
+}
+
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: small;
+    font-variant: small-caps;
+}
+
+p.sansserif {
+    font-family: Helvetica, Arial, sans-serif font-size: medium;
+    font-size: medium;/* large, x-large */
+    font-style: italic;
+    font-weight: bold;
+}
+
+p.monospace {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: 100px;
+}
+
+p.cursive {
+    font-family: Florence, cursive;
+    font-size: 1.25em;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    /* half of height and width */
+    border-radius: 100px;
+    background-color: green;
+    color: white;
+}
+
+.radius {
+    border-radius: 5px 10px 15px 20px;
+    background-color: green;
+    color: white;
+    padding: 50px;
+}
+
+.round {
+    /* -webkit for webkit based browser (Opera, Chrome) -moz for firefox, etc. */
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    border: 1px solid green;
+    width: 200px;
+    padding: 25px;
+}
