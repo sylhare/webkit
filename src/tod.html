@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>tod</title>
+    <style>
+        #mainContent {
+            background-color: #E3F0FB;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        
+        .buttonStyle {
+            border-radius: 4px;
+            border: thin solid #F0E020;
+            padding: 5px;
+            background-color: #F8F094;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #663300;
+            width: 75px;
+        }
+        
+        .buttonStyle:hover {
+            border: thin solid #FFCC00;
+            background-color: #FCF9D6;
+            color: #996633;
+            cursor: pointer;
+        }
+        
+        .buttonStyle:active {
+            border: thin solid #99CC00;
+            background-color: #F5FFD2;
+            color: #669900;
+            cursor: pointer;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #turn {
+            border-radius: 25px;
+            border: 5px solid #CCC;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+    </style>
+
+    <script>
+        //var myButton = document.getElementById("clickButton");
+        myButton.addEventListener('click', doSomething, false)
+            //var myText = document.getElementById("helloText"); 
+
+        function doSomething() {
+            //  myText.textContent = "hello, world!";
+            alert("hello, world!");
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="mainContent">
+        <div id="logo"></div>
+        <div>
+            <div id="view">
+                <p>Test ?</p>
+                <p id="helloText">?</p>
+            </div>
+            <div>
+                <div id="timer"></div>
+                <div id="turn"></div>
+            </div>
+        </div>
+        <div id="button">
+            <button id="clickButton" class="buttonStyle" type="button" onclick="doSomething()">Click Me!</button>
+            <button class="buttonStyle" type="button" onclick="alert('Hello world!')">Click Me!</button>
+            <button class="buttonStyle" type="button" onclick="alert('Hello world!')">Click Me!</button>
+        </div>
+    </div>
+</body>
+
+</html>

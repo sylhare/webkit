@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+	
+	LocalStorage Tutorial
+	www.gameplaypassion.com
+	 
+	Put this code in an html file and open it with a web browser.
+	Try many browsers to check LocalStorage support. 
+	
+	-->
+
+<html>
+
+<head>
+    <script type="text/javascript" src="/static/js/analytics.js?v=1494891701.0" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        archive_analytics.values.service = 'wb';
+        archive_analytics.values.server_name = 'wwwb-app14.us.archive.org';
+        archive_analytics.values.server_ms = 673;
+
+    </script>
+    <script type="text/javascript" src="/static/js/wbhack.js?v=1494891701.0" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        __wbhack.init('');
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1494891701.0" />
+    <link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1494891701.0" />
+
+    <!-- End Wayback Rewrite JS Include -->
+    <title>LocalStorage Example - Gameplay Passion | Let's Play !</title>
+
+    <!-- I've downloaded Mootools because I usually work offline -->
+    <script src="/web/20150324000649js_/http://www.gameplaypassion.com/demos/localStorage/mootools-1.4.5.js"></script>
+
+    <script>
+        /* 
+         * Tests if local storage is supported in the browser.
+         * 
+         * Returns:
+         * 	True if local storage is supported, false if not.
+         */
+        function isLocalStorageSupported() {
+            try {
+                return 'localStorage' in window && window['localStorage'] !== null;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        // this code is executed after the page loads
+        window.addEvent("domready", function() {
+            // Div object where we'll display localStorage availability
+            var supportDiv = document.id("localStorageSupport");
+
+            // localStorage feature detection 
+            if (isLocalStorageSupported()) {
+                // local storage is supported, paint the div in green
+                supportDiv.setStyle("backgroundColor", "#00FF00");
+            } else {
+                // local storage is not supported
+
+                // paint the div in red
+                supportDiv.setStyle("backgroundColor", "#FF0000");
+
+                // create a fake localStorage global variable
+                localStorage = [];
+            }
+
+            // handling click on "save"
+            document.id("save").addEvent("click", function() {
+                // creating a literal object "progress" filled with values from inputs
+                var progress = {
+                    nickname: document.id("input_nickname").value,
+                    faction: document.id("input_faction").value
+                };
+
+                // saving "progress" to localStorage, after encoding it to JSON format
+                localStorage["progress"] = JSON.encode(progress);
+            });
+
+            // handling click on "load"
+            document.id("load").addEvent("click", function() {
+                // decoding "progress" from local storage
+                var progress = JSON.decode(localStorage["progress"]);
+
+                // displaying "progress", we'll use a simple alert
+                alert("Nickname : " + progress.nickname +
+                    ", Faction : " + progress.faction);
+            });
+        });
+
+    </script>
+
+    <style>
+        /*
+  * CSS Styles
+  */
+        
+        #localStorageSupport {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 50px;
+            /* vertical align */
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="localStorageSupport">Local Storage Support</div>
+
+    <div>
+        Nickname :
+        <input id="input_nickname" type="text" value="ZED" />
+        <br/> Faction :
+        <input id="input_faction" type="text" value="Night Elves" />
+        <br/>
+
+        <button id="save">SAVE</button>
+        <button id="load">LOAD</button>
+    </div>
+</body>
+
+</html>
