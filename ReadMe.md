@@ -6,17 +6,21 @@ You know that feeling like "I knew how to do it, where did I put that ... oh rig
 
 ## Start learning
 
-To learn:
+Here are some complete website for web based languages and technologies to learn:
 
-- https://www.w3schools.com/
-- https://www.sololearn.com/
-- https://www.kirupa.com/learn/index.htm
+- [w3c Schools](https://www.w3schools.com/)
+- [SoloLearn](https://www.sololearn.com/)
+- [Kirupa's blog](https://www.kirupa.com/learn/index.htm)
 
 ## HTML
+
+Here is a list of nice links for HTML:
 
 - [getting started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 
 ## CSS
+
+Here is a list of nice links for CSS:
 
 - [How to align div](http://www.tipue.com/blog/center-a-div/)
 
@@ -27,9 +31,23 @@ To learn:
 
 ## Javascript  
 
+Here is a list of nice links for Javascript:
+
 ### events: 
 
 - [Creating and triggering events](https://developer.mozilla.org/fr/docs/Web/Guide/DOM/Events/Creating_and_triggering_events )
 - [Trigger events with parameters](http://stackoverflow.com/questions/18613456/trigger-event-with-parameters) 
 - [Dispatch event with data](http://stackoverflow.com/questions/23725816/dispatch-event-with-data)
+
+
+## BootStrap
+
+[Bootstrap](http://getbootstrap.com/) is a nice CSS / Javascript framework to build good looking sites, app, blogs, etc.
+
+You can follow the [github](https://github.com/twbs/bootstrap) project here
+
+There are also a lot of layout tools that can be used to either customiser or simplify your life with bootstrap such as :
+
+- [layouit](http://www.layoutit.com/build)
+
 
