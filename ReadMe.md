@@ -11,6 +11,8 @@ Here are some complete website for web based languages and technologies to learn
 - [w3c Schools](https://www.w3schools.com/)
 - [SoloLearn](https://www.sololearn.com/)
 - [Kirupa's blog](https://www.kirupa.com/learn/index.htm)
+- [MDN learning Area](https://developer.mozilla.org/en-US/docs/Learn)
+	- mdn/[learning-area](https://github.com/mdn/learning-area) code example on github
 
 ## HTML
 
@@ -28,6 +30,7 @@ Here is a list of nice links for CSS:
 
 - [Color scheme](https://coolors.co/browser/latest/7) 
 - [Color's info](http://www.color-hex.com/) 
+- [Design-seeds](https://www.design-seeds.com/wander/wanderlust/color-range-2/)
 
 ## Javascript  
 
@@ -38,6 +41,24 @@ Here is a list of nice links for Javascript:
 - [Creating and triggering events](https://developer.mozilla.org/fr/docs/Web/Guide/DOM/Events/Creating_and_triggering_events )
 - [Trigger events with parameters](http://stackoverflow.com/questions/18613456/trigger-event-with-parameters) 
 - [Dispatch event with data](http://stackoverflow.com/questions/23725816/dispatch-event-with-data)
+
+### Managing JSON
+
+You can [load JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) through an XMLHttpRequest.
+
+When you want to transform a JSON object into string or a string into a JSON.
+Write that in the console (ctr + shift + i) in the browser
+
+```javascript
+var myJSON = { "name": "John", "level": "27" };
+myJSON
+
+var myString = JSON.stringify(myJSON);
+myString
+
+var myParsed = JSON.parse(myString);
+myParsed
+```
 
 
 ## BootStrap
