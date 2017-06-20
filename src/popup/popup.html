@@ -1,0 +1,88 @@
+<html><head>
+    <style>
+        #jAlert_table,
+        #jAlert_th,
+        #jAlert_td {
+            border: 2px solid blue;
+            background-color: lightblue;
+            border-collapse: collapse;
+            width=100px;
+        }
+        
+        #jAlert_th,
+        #jAlert_td {
+            padding: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        #jAlert {
+            /* Position fixed */
+            position: fixed;
+            /* Center it! */
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+    </style>
+</head>
+
+<body style="background-color: gray; cursor: wait;">
+    <p>TEXT</p>
+    <div id="jAlRem">
+        <div id="jAlert">
+            <table id="jAlert_table">
+                <tbody>
+                    <tr id="jAlert_tr">
+                        <td id="jAlert_td">
+                            <p id="jAlert_content">Stop! Stop!</p>
+                        </td>
+                        <td id="jAlert_td"> <button id="jAlert_ok" onclick="jAlertagree()"><b>Okay!</b></button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+    <p>TEXT</p>
+
+
+    <script>
+        function jAlertagree() {
+            var parent = document.getElementById('jAlRem');
+            var child = document.getElementById('jAlert');
+            parent.removeChild(child);
+            document.body.style.backgroundColor = "white";
+            document.body.style.cursor = "default";
+        }
+    </script>
+    <script type="text/javascript">
+        function jAlert(text, customokay) {
+            document.getElementById('jAlert_content').innerHTML = text;
+            document.getElementById('jAlert_ok').innerHTML = customokay;
+            document.body.style.backgroundColor = "gray";
+            document.body.style.cursor = "wait";
+        }
+
+
+
+        jAlert("Stop! Stop!", "<b>Okay!</b>");
+    </script>
+
+</body></html>

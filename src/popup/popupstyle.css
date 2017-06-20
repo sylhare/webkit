@@ -1,0 +1,22 @@
+#jAlert_table, #jAlert_th, #jAlert_td{
+    border: 2px solid blue;
+    background-color:lightblue;
+    border-collapse: collapse;
+    width=100px;
+}
+
+#jAlert_th, #jAlert_td{
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+#jAlert{
+    /* Position fixed */
+    position:fixed;
+    /* Center it! */
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
