@@ -19,3 +19,10 @@ function getArrayLocal(name) {
     var text = localStorage.getItem(name);
     return text.split(",");
 }
+
+
+// Enregistre des données dans l'espace de stockage de la session courante
+sessionStorage.username = "John";
+
+// Accède à une donnée stockée
+alert( "username = " + sessionStorage.username );
