@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2010-06-18:v2
+
+CACHE:
+# index.html is cached by default anyway -- this is just to be explicit
+index.html 
+data.json
+script.js
+
+# Fallback, so all pages put here will be displayed if the user is offline instead
+#FALLBACK:
+
+# Resources that require the user to be online
+NETWORK:
+*
