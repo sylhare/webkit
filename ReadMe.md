@@ -19,18 +19,21 @@ Here are some complete website for web based languages and technologies to learn
 Here is a list of nice links for HTML:
 
 - [getting started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+- Simple HTML examples : [samdutton/simpl](https://github.com/samdutton/simpl)
 
 ## CSS
 
 Here is a list of nice links for CSS:
 
 - [How to align div](http://www.tipue.com/blog/center-a-div/)
+- [CSS Grid for better cross plateform design](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout)
 
 ### Colors
 
 - [Color scheme](https://coolors.co/browser/latest/7) 
 - [Color's info](http://www.color-hex.com/) 
 - [Design-seeds](https://www.design-seeds.com/wander/wanderlust/color-range-2/)
+- Müller's Colour Brightness Theory for better colors
 
 ## Javascript  
 
@@ -62,6 +65,15 @@ var myParsed = JSON.parse(myString);
 myParsed
 ```
 
+## JQuery
+
+[Javascript framework](http://jquery.com/)
+
+How to use, download here the source file Or add this line in your html:
+
+```javascript
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
 
 ## BootStrap
 
@@ -73,5 +85,6 @@ There are also a lot of layout tools that can be used to either customiser or si
 
 - [layouit](http://www.layoutit.com/build)
 - [Bootstrap design tool](http://bootstrapdesigntools.com/)
+- [Bootstrap elements](https://bootsnipp.com/)
 
 

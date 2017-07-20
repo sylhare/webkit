@@ -75,7 +75,6 @@ function showHeroes(jsonObj) {
 }
 
 function loadJSON(file, callback) {
-    console.log("start");
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -91,7 +90,6 @@ function loadJSON(file, callback) {
 
 
 function load() {
-
     loadJSON("data.json", function (response) {
 
         var actual_JSON = JSON.parse(response);
@@ -99,10 +97,9 @@ function load() {
         console.log(actual_JSON);
     });
 
-
 }
 
-console.log("test");
+//console.log("test");
 window.onload = load();
 
 
@@ -125,4 +122,5 @@ var json = (function () {
     });
     return json;
 })(); 
-console.log(json);
+
+//console.log(json);
