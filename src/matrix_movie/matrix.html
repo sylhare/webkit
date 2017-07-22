@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: black;
+        }
+        
+        canvas {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        var font_size = 10;
+        var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789中日字安或出現某前的入法有部不見了".split("");
+        var drop = [];
+        
+        function getRandomCharacter(){
+            return matrix[Math.floor(Math.random() * matrix.length)];
+        }
+
+        function getRandomPosition(){
+            /* Get a random position not outside of the canvas */
+            return -1 * Math.random() * 100;
+        }
+
+        function setup() {
+            /* Make the canvas fullscreen and randomly starts the drops behind the top of the screen: drop[x] = y  */
+            "use strict"
+            var columns, x;
+
+            c.height = window.innerHeight;
+            c.width = window.innerWidth;
+            columns = c.width / font_size;
+
+            for (x = 0; x < columns; x++) {
+                drop[x] = getRandomPosition();                
+            }
+        }
+        
+        function draw() {
+            /* Draw the characters in green dropping from the top on a black screen */
+            var x, y, i;
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)"; /* the 40% to make the characters glow */
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px arial";
+
+            for (i = 0; i < drop.length; i++) {
+                x = i * font_size;
+                y = drop[i] * font_size;
+                ctx.fillText(getRandomCharacter(), x, y);
+
+                //If the drop reaches the end it's put back randomly at the top, else it keeps falling.
+                if (y > c.height){
+                    drop[i] = getRandomPosition();
+                } else {
+                    drop[i]++;
+                }
+            }
+        }
+
+        setup();
+        setInterval(draw, 30);
+
+    </script>
+</body>
+
+</html>
