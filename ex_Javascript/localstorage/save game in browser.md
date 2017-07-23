@@ -1,10 +1,9 @@
 ## Save Game Data in Browser With HTML5 LocalStorage
 
-**It is a copy-paste form [www.gameplaypassion.com](https://web.archive.org/web/20160501000000*/http://www.gameplaypassion.com:80/blog/how-to-save-game-data-in-browser-html5-localstorage/), because the website is no longer available.**
+**It is a extract from [gameplaypassion](https://web.archive.org/web/20160501000000*/http://www.gameplaypassion.com:80/blog/how-to-save-game-data-in-browser-html5-localstorage/), because the website is no longer available.**
 
 If you close or refresh a web page, all your javascript variables are lost forever unless you use HTML5 LocalStorage.
-
-In this article, I introduce you to localStorage and how you can use it to save game data in the browser.
+In this article, I introduce you to `localStorage` and how you can use it to save game data in the browser.
 
 
 ### LocalStorage in 2 Seconds
@@ -102,4 +101,5 @@ To see the complete source code, visit the demos page and hit view source (use C
 Now you have no excuse not to make games that save game data in the browser !
 
 For more info on localStorage : 
-[http://diveintohtml5.info/storage.html](http://diveintohtml5.info/storage.html)
+
+- [diveintohtml5](http://diveintohtml5.info/storage.html)
