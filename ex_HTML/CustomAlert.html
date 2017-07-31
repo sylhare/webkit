@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <style>
+        #alertContainer {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 10000;
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        
+        #alertBox {
+            width: 300px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 7px;
+        }
+        
+        .warning {
+            background-color: #ff9800;
+        }
+        
+        #alertBox h1 {
+            margin: 0;
+            font: bold 1.2em "Trebuchet MS", Helvetica, sans-serif;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            height: 15%;
+            color: #FFF;
+            padding: 2px 0 2px 5px;
+        }
+        
+        #alertBox p {
+            font: bold 1em "Trebuchet MS", Helvetica, sans-serif;
+            height: 25%;
+            padding-left: 5%;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        
+        #alertBox #closeBtn {
+            display: block;
+            position: relative;
+            margin: 5% auto;
+            padding: 3%;
+            border: 0 none;
+            width: 15%;
+            font: bold 0.7em "Trebuchet MS", Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFF;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        
+        #closeBtn:hover {
+            -webkit-filter: brightness(90%);
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1> Test </h1>
+    <input type="button" value="Test the alert" onclick="customAlert('Alert','test message');" />
+    <p> text </p>
+
+    <!-- Custom Alert -->
+    <div id="alertContainer">
+        <div id="alertBox" class="center">
+            <h1 id="customAlert-title" class="warning">Alert</h1>
+            <p id="customAlert-content">message</p>
+            <a id="closeBtn" class="" href="#" onclick="removeCustomAlert()">Ok</a>
+        </div>
+    </div>
+
+    <p> text </p>
+
+    <script>
+        function customAlert(title, text) {
+            document.getElementById("closeBtn").classList.add("warning");
+            document.getElementById("alertContainer").style.visibility = "visible";
+            document.getElementById("customAlert-content").innerHTML = text;
+            document.getElementById("customAlert-title").innerHTML = title;
+
+        }
+
+        function removeCustomAlert() {
+            document.getElementById("alertContainer").style.visibility = "hidden";
+        }
+
+    </script>
+</body>
+
+</html>
