@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var url = "https://oc-jswebsrv.herokuapp.com/api/articles";
+        /*
+        Data of the url
+        
+        [{
+            "id": "33344",
+            "titre": "Titre",
+            "contenu": "Contenu"
+        }, {
+            "id": "33334",
+            "titre": "Test",
+            "contenu": "TEst"
+        }, {
+            "id": "33324",
+            "titre": "xsqsx",
+            "contenu": "sxqsxqx"
+        }, {
+            "id": "33314",
+            "titre": "Test",
+            "contenu": "Il me semble que tout fonctionne bien"
+        }, {
+            "id": "33304",
+            "titre": "Test d\u0027article",
+            "contenu": "Eeeeeh pas d\u0027inspi"
+        }]
+
+        */
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                getCall(url);
+                ajaxGet(url, show);
+                ajaxCall(url, "GET", "json");
+            });
+        });
+
+        // With JQuery $get
+        // $.get(URL,data,function(data,status,xhr),dataType)
+        function getCall(url) {
+            $.get(url, function(data, status) {
+                show(JSON.stringify(data), status);
+            });
+        }
+
+        // With JQuery and $ajax
+        function ajaxCall(url, type, dataType) {
+            $.ajax({
+                url: url,
+                type: type,
+                dataType: dataType,
+                success: function(data, status) {
+                    show(JSON.stringify(data), status)
+                },
+                error: function(result, status, error) {},
+                complete: function(result, error) {}
+            });
+        };
+
+        // With Javascript and XMLHttpRequest
+        function ajaxGet(url, callback) {
+            var req = new XMLHttpRequest();
+            req.open("GET", url);
+            req.addEventListener("load", function() {
+                // status >= 200 means the GET was successfull, if over 400 means it failed
+                if (req.status >= 200 && req.status < 400) {
+                    callback(req.responseText, req.status);
+                } else {
+                    console.error(req.status + " " + req.statusText + " " + url);
+                }
+            });
+            req.addEventListener("error", function() {
+                console.error("Network error with url: " + url);
+            });
+            req.send(null);
+        }
+
+        // To show the data
+        function show(data, status) {
+            //  Math.random is to poorly differenciate the alerts
+            alert(Math.floor(Math.random() * 10) + "\n\nData: " + data + "\nStatus: " + status);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button>Send an HTTP GET request and get the result back</button>
+
+</body>
+
+</html>
