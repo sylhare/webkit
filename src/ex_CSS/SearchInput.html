@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            width: 180px;
+            border-bottom: 2px solid #ccc;
+            outline: 0;
+            border-width: 0 0 3px 0;
+        }
+        
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 0;
+            outline: 0;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        *:focus {
+            outline: none;
+        }
+        
+        input[type=text]:focus {
+            width: 100%;
+        }
+        
+        button {
+            border: none;
+            font-size: 16px;
+            background-color: white;
+            color: #aaa;
+        }
+        
+        button:hover {
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p>Animated search form:</p>
+
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+        <button>ok</button>
+    </form>
+
+</body>
+
+</html>
