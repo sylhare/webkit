@@ -1,0 +1,24 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "this a test package ",
+  "main": "index.js",
+  "scripts": {
+    "test": "--"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylhare/webkit.git"
+  },
+  "keywords": [
+    "test",
+    "npm",
+    "package"
+  ],
+  "author": "sylhare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sylhare/webkit/issues"
+  },
+  "homepage": "https://github.com/Sylhare/webkit#readme"
+}
