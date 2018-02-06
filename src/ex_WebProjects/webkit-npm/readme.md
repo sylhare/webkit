@@ -1,4 +1,4 @@
-# npm test package
+# Webkit npm
 
 Experiment with npm and how to create a package and publish it online. Node Package Manager (npm) needs [node.js](https://nodejs.org/en/) to be installed in order for any application or package to run.
 
@@ -13,7 +13,12 @@ It should be running on [localhost:3000](http://localhost:3000/) and you should 
 
 ## Package
 
-You should have an account created on [npm](https://www.npmjs.com/). Then you can pack (`node pack`) and publish your package.
+You should have an account created on [npm](https://www.npmjs.com/). Once it is done, add the user to the machine using:
+```bash
+node adduser
+```
+
+Then you can publish your package (you need to be a level higher of your package to do that).
 ```bash
 node publish
 ```
