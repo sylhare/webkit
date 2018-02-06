@@ -1,10 +1,10 @@
 {
-  "name": "npm-test",
+  "name": "npm-package-test",
   "version": "1.0.0",
   "description": "this a test package ",
   "main": "index.js",
   "scripts": {
-    "test": "--"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,13 @@
   ],
   "author": "sylhare",
   "license": "MIT",
+  "dependencies": {
+
+    "express": "^4.14.0"
+
+  },
+
+  "bundledDependencies": ["express"],
   "bugs": {
     "url": "https://github.com/Sylhare/webkit/issues"
   },
