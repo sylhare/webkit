@@ -1,6 +1,6 @@
 {
   "name": "webkit-npm",
-  "version": "2.0.0",
+  "version": "2.0.18",
   "description": "Experiment with npm and how to create a package and publish it online. Node Package Manager (npm) needs [node.js](https://nodejs.org/en/) to be installed in order for any application or package to run.",
   "main": "index.js",
   "dependencies": {
