@@ -1,7 +1,7 @@
 # Webkit npm
 
  [![Generic badge](https://img.shields.io/badge/github-webkit-blue.svg)](https://github.com/Sylhare/webkit)
- [![npm version](https://badge.fury.io/js/webkit-npm.svg)](https://badge.fury.io/js/webkit-npm) [![Generic badge](https://img.shields.io/badge/maintainability-A-green.svg)](https://github.com/Sylhare/webkit) [![Generic badge](https://img.shields.io/badge/build-pass-green.svg)](https://github.com/Sylhare/webkit) [![Generic badge](https://img.shields.io/badge/maintainability-A-green.svg)](https://github.com/Sylhare/webkit)
+ [![npm version](https://badge.fury.io/js/webkit-npm.svg)](https://badge.fury.io/js/webkit-npm) [![Generic badge](https://img.shields.io/badge/build-pass-green.svg)](https://github.com/Sylhare/webkit) [![Generic badge](https://img.shields.io/badge/maintainability-A-green.svg)](https://github.com/Sylhare/webkit)
 
 Experiment with npm and how to create a package and publish it online. Node Package Manager (npm) needs [node.js](https://nodejs.org/en/) to be installed in order for any application or package to run.
 
@@ -13,6 +13,11 @@ node index.js
 ```
 
 It should be running on [localhost:3000](http://localhost:3000/) and you should see "Hello World".
+
+Try going to different pages or using a query like:
+```
+http://localhost:3000/?firstname=John&lastname=Doe
+```
 
 ## Package
 
