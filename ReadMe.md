@@ -1,4 +1,6 @@
-# webkit  [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3add1f97018e4710ab17fa9c94234508)](https://www.codacy.com/app/Sylhare/webkit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sylhare/webkit&amp;utm_campaign=Badge_Grade)
+# webkit  
+
+[![Generic badge](https://img.shields.io/badge/github-webkit-blue.svg)](https://github.com/Sylhare/webkit) [![npm version](https://badge.fury.io/js/webkit-npm.svg)](https://badge.fury.io/js/webkit-npm) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3add1f97018e4710ab17fa9c94234508)](https://www.codacy.com/app/Sylhare/webkit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sylhare/webkit&amp;utm_campaign=Badge_Grade)
 
 Some tests on javascript, CSS and HTML. 
 Because at least with github it can be stored online and I know where to find them. 
@@ -123,6 +125,19 @@ How to use, download here the source file Or add this line in your html:
 
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
+
+## npm
+
+You would need [Node.js](https://nodejs.org/en/) beforehand. Node.js is a free open source lightweight server framework that runs on javascript. 
+Node Package Manager (npm) needs [node.js](https://nodejs.org/en/). To install a module:
+```
+npm install module
+```
+
+To run a module (it should be written on the doc, or it should have an `index.js`):
+```
+node index.js
 ```
 
 ## Jekyll
