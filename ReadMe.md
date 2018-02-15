@@ -125,11 +125,24 @@ var myParsed = JSON.parse(myString);
 myParsed
 ```
 
+## Test framework
+
+To test your javascript code, you might need the help of some test framework. As in other languages, they are here to help you write better code.
+
+- [Raygun - framework comparaison](https://raygun.com/blog/javascript-unit-testing-frameworks/)
+- [Designmodo - test javascript unit test](https://designmodo.com/test-javascript-unit/)
+- [Medium - javascript testing guide](https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a)
+
+I have tested a couple of them:
+
+- jasmine - nice in browser display, feature BDD
+- Qunit - looks like a traditionnal unit test framework, a bit ugly in browser.
+
 ## JQuery
 
-[Javascript framework](http://jquery.com/)
+The [JQuery framework](http://jquery.com/) is a set a function that facilitate the development of javascript features. From DOM manipulation to events, it makes everything easier.
 
-How to use, download here the source file Or add this line in your html:
+How to use, download here the source file or add this line in your html:
 
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
