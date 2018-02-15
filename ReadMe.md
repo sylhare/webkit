@@ -42,12 +42,20 @@ It is default with bootstrap, but here are some explainations on how to do it yo
 
 ### Colors
 
+#### Color therory
 Make it look good:
 
 - [Color scheme](https://coolors.co/browser/latest/7) 
 - [Color's info](http://www.color-hex.com/) 
 - [Design-seeds](https://www.design-seeds.com/wander/wanderlust/color-range-2/)
-- Müller's Colour Brightness Theory for better colors
+- [Müller's Colour Brightness Theory](http://www.colourlovers.com/blog/2007/09/02/the-muller-formula-or-predictable-color-preferences)
+
+#### HSL, HSV, RGB
+- [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
+- [RGB to HSL color conversion](https://www.rapidtables.com/convert/color/rgb-to-hsl.html)
+- [HSL to RGB color conversion](https://www.rapidtables.com/convert/color/hsl-to-rgb.html)
+- [Math behind colorspace conversions, RGB-HSL](http://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/)
+- [The three-dimensional representation of the HSV model](https://books.google.ca/books?id=oBbY3uFIgM8C&pg=PA318&lpg=PA318&dq=%22The+three-dimensional+representation+of+the+HSV+model%22&source=bl&ots=yP-bc9zeEk&sig=YXor-sGrcrrOENu-OzEHsDtc4bA&hl=en&sa=X&ei=5G9cUcbTAYrn0QHX9IHgCQ#v=onepage&q=%22The%20three-dimensional%20representation%20of%20the%20HSV%20model%22&f=false)
 
 ## BootStrap
 
