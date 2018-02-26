@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flex Sticky footer</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #252525;
+            border-left: 1px solid #111;
+            border-right: 1px solid #111;
+            min-height: 100vh;
+        }
+
+        #container {
+            color: white;
+            background: #363636;
+            padding: 2em;
+            background: #363636;
+            width: 55%;
+            text-align: center;
+        }
+
+        .flex-parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex-container {
+            flex: 1 1 auto;    /*grow vertically*/
+        }
+
+        #footer {
+            color: #707070;
+            height: 2em;
+            font-size: small;
+        }
+
+    </style>
+</head>
+
+<body class="flex-parent">
+    <div id="container" class="flex-container">
+        <h1>A webpage</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium augue quis augue ornare tempor. Donec eu purus vitae nisi eleifend euismod. Nullam sem nunc, bibendum tempor iaculis eu, consequat in sem. Phasellus nec molestie orci. Fusce varius nisi est, non aliquet dolor porttitor non. Aliquam eu ante nec massa pulvinar posuere. Praesent consectetur porttitor ipsum, eget viverra urna ultricies et.</p>
+        <p>Quisque vehicula neque a enim dignissim, et vestibulum orci viverra. Pellentesque aliquam feugiat interdum. Ut molestie vitae lacus in eleifend. Sed scelerisque urna ut elit venenatis suscipit. Nullam nec urna vel enim mattis interdum ut consequat libero. Proin in imperdiet orci. Vivamus felis lacus, dictum ac eros eu, malesuada pretium nisi. Cras suscipit nunc magna, a egestas neque facilisis sed.</p>
+    </div>
+    <div id="footer">This is a footer.</div>
+</body>
+
+</html>
