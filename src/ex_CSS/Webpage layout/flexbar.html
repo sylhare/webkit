@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flex bar</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+
+            /* render */
+            border: 1px solid tomato;
+            font-size: 30px;
+            color: white;
+        }
+
+        .item-1 {
+            flex: 2;
+
+            /*render*/
+            background-color: tomato;
+            text-align: center;
+            margin: 5px;
+            order: 0;
+        }
+
+        .item-2 {
+            flex: 3;
+            order: 1;
+
+            /* render */
+            background-color: green;
+            text-align: center;
+            margin: 5px;
+        }
+
+        @media all and (max-width: 800px) {
+            .item-1 {
+                flex: 1;
+                order: 3;
+            }
+            .separator {
+                height: 0;
+                order: 2;
+                flex-basis: 100%;
+            }
+            .item-2 {
+                flex: 1;
+                order: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item-1">test</div>
+        <div class="item-1">test</div>
+        <div class="separator">t</div>
+        <div class="item-2">toast</div>
+        <div class="item-2">toasted</div>
+        <div class="item-2">toast</div>
+    </div>
+</body>
+
+</html>
+
+
