@@ -4,27 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>Sticky footer</title>
-    
+
     <style>
         /**
- * Demo Styles
- *
- * To copy the effect, just take what is not used to render the example
- * 
- */
+         * Demo Styles
+         *
+         * To copy the effect, just take what is not used to render the example
+         * 
+         */
 
         html {
-            height: 100%;  /* for the page to take full window height */
-            box-sizing: border-box;  /* to have the footer displayed at the bottom of the page without scrolling */
+            height: 100%;
+            /* for the page to take full window height */
+            box-sizing: border-box;
+            /* to have the footer displayed at the bottom of the page without scrolling */
         }
 
         *,
         *:before,
         *:after {
-            box-sizing: inherit; /* enable the border-box effect everywhere */
+            box-sizing: inherit;
+            /* enable the border-box effect everywhere */
         }
 
         /* Add this class or update your body with it */
+
         .body-for-sticky {
             position: relative;
             /* for the footer to move with the page size */
@@ -35,6 +39,7 @@
         }
 
         /* Add or update your footer with this class */
+
         .sticky-footer {
             position: absolute;
             /* for it to disappear under last body element */
@@ -44,7 +49,8 @@
 
         body {
             /* to render the body */
-            margin: 0; /* avoid margin between the body and html */
+            margin: 0;
+            /* avoid margin between the body and html */
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
@@ -64,7 +70,6 @@
             max-width: 640px;
             width: 94%;
         }
-
     </style>
 </head>
 
