@@ -16,11 +16,11 @@
             message.innerHTML = "";
             x = document.getElementById("demo").value;
             try {
-                if (x == "") throw new TypeError("empty");
+                if (x === "") throw new TypeError("empty");
                 if (isNaN(x)) throw "not a number";
                 if (x > 10) throw "too high";
                 if (x < 5) throw "too low";
-                if (x == 5) throw {
+                if (x === 5) throw {
                     name: "System Error",
                     level: "Show Stopper",
                     message: "Error detected. Please contact the system administrator.",
@@ -38,7 +38,7 @@
 
         try {
             try {
-                throw new Error("oups");
+                //throw new Error("oups");
                 throw customError;
             } catch (ex) {
                 console.error("interne", ex.message);

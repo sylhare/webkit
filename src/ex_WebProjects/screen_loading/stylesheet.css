@@ -14,10 +14,8 @@ button {
     display: none;
     height: 50px;
     width: 120px;
-    border-style: solid;
-    border-color: #CC8400;
     border-radius: 5px;
-    border-width: 2px;
+    border: 2px solid #CC8400;
 }
 
 .loading-icon {

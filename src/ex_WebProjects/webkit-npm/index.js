@@ -15,7 +15,7 @@ var server = http.createServer(function (req, res) {
         "Content-Type": "text/html"
     }); // Saying 200 it's ok the page exist
 
-    if (page == '/') {
+    if (page === '/') {
         res.write('<!DOCTYPE html>' +
             '<html>' +
             ' <head>' +
@@ -36,9 +36,9 @@ var server = http.createServer(function (req, res) {
         res.write(' </body>' +
                   '</html>');
         res.end();
-    } else if (page == '/index') {
+    } else if (page === '/index') {
         res.write('You\'re in the index page, there is nothing to see');
-    } else if (page == '/super/secret') {
+    } else if (page === '/super/secret') {
         res.write('Hey, this is a private area!');
     }
 });
@@ -50,7 +50,7 @@ server.on('request', function(req, res) {
 server.on('close', function() { // We listened to the close event
     console.log('The server closed');  // say goodbye when the server is closed
     greet.sayGoodbye();
-})
+});
 
 server.listen(3000); // will be on localhost:3000
 

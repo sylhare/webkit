@@ -1,5 +1,4 @@
 function colorLog(message, color) {
-    color = color || "black";
     switch (color) {
         case "success":
             color = "Green";
@@ -14,7 +13,7 @@ function colorLog(message, color) {
             color = "Orange";
             break;
         default:
-            color = color;
+            color = "black";
     }
     console.log("%c" + message, "color:" + color);
 }

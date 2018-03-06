@@ -1,5 +1,5 @@
 //var myButton = document.getElementById("clickButton");
-myButton.addEventListener('click', doSomething, false)
+myButton.addEventListener('click', doSomething, false);
     //var myText = document.getElementById("helloText"); 
 
 function doSomething() {

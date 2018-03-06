@@ -19,7 +19,6 @@
 }
 
 ul {
-    background-color: "#FFFFFF";
-    list-style-image: url("http://www.sololearn.com/images/bullet.jpg");
-    list-style-position: inside;
+    background-color: white;
+    list-style: inside url("http://www.sololearn.com/images/bullet.jpg");
 }

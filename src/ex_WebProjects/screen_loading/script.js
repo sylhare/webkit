@@ -5,7 +5,7 @@ function wait() {
     var timer = document.getElementsByTagName("timer")[0];
     timer.innerHTML = time;
     time++;
-    if (time == 15) {
+    if (time === 15) {
         document.getElementsByTagName("button")[0].style = "display: inline-block;";
     }
 }

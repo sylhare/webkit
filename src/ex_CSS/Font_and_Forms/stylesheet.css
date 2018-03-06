@@ -10,7 +10,6 @@ p.serif {
 
 p.sansserif {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: medium;
     font-size: medium;/* large, x-large */
     font-style: italic;
     font-weight: bold;
@@ -19,7 +18,7 @@ p.sansserif {
 p.monospace {
     font-family: "Courier New", Courier, monospace;
     font-size: 12px;
-    font-weight: 100px;
+    font-weight: 100;
 }
 
 p.cursive {
