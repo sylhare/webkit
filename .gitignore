@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 src/ex_WebProjects/webkit-npm/node_modules/
 .idea/*
+src/ex_Javascript/chart.js/node_modules/*
