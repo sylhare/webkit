@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chart.js </title>
+
+    <!-- import plugin script -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="chartContainer" style="width:50%; float: left; clear:none;">
+    <canvas id="bar-chart" width="600" height="400"></canvas>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('bar-chart').getContext("2d");
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, "#80b6f4");
+        gradientStroke.addColorStop(0.2, "#94d973");
+        gradientStroke.addColorStop(0.5, "#fad874");
+        gradientStroke.addColorStop(1, "#f49080");
+
+            
+
+        // Bar chart
+        var s = new Chart(ctx, {
+            type: 'bar',
+            //type: 'horizontalBar',
+            data: {
+                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                datasets: [{
+                    label: "Population (millions)",
+                    fill: true,
+                    "backgroundColor": ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    //backgroundColor: gradientStroke,
+                    //backgroundColor: "RoyalBlue",
+                    data: [2478, 5267, 734, 784, 433]
+                }]
+            },
+            options: {
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: 'Predicted world population (millions) in 2050'
+                }
+            }
+        });
+
+    </script>
+    <div id="chartContainer" style="width:50%; float: left;">
+    <canvas id="pie-chart" width="600" height="400"></canvas>
+    </div>
+
+    <script>
+        var ctx2 = document.getElementById('pie-chart').getContext("2d");
+
+        // Bar chart
+        var s2 = new Chart(ctx2, {
+            type: 'pie',
+            //type: 'horizontalBar',
+            data: {
+                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                datasets: [{
+                    label: "Population (millions)",
+                    fill: true,
+                    "backgroundColor": ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    //backgroundColor: gradientStroke,
+                    //backgroundColor: "RoyalBlue",
+                    data: [2478, 5267, 734, 784, 433]
+                }]
+            },
+            options: {
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: 'Predicted world population (millions) in 2050'
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
