@@ -1,0 +1,71 @@
+<!-- http://www.nikolay.rocks/2015-10-29-rainbows-generator-in-javascript -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#rainbow {
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<p>Click to create a node</p>
+
+<div id="rainbow">
+Rainbow
+</div>
+
+<button onclick="createNode()">Try it</button>
+
+<script>
+var size    = 5;
+var rainbow = new Array(size);
+
+for (var i=0; i<size; i++) {
+  var red   = sin_to_hex2(i, 0 * Math.PI * 2/3); // 0   deg
+  var blue  = sin_to_hex2(i, 1 * Math.PI * 2/3); // 120 deg
+  var green = sin_to_hex2(i, 2 * Math.PI * 2/3); // 240 deg
+
+  rainbow[i] = "#"+ red + green + blue;
+}
+
+function sin_to_hex(i, phase) {
+  var sin = Math.sin(Math.PI / size * 2 * i + phase);
+  var rgb = Math.floor(sin * 127) + 128;
+  var hex = rgb.toString(16);
+
+  return hex.length === 1 ? "0"+hex : hex;
+}
+    
+function sin_to_hex2(i, phase) {
+  var sin = Math.sin(i * 2 * Math.PI / size + phase);
+  var rgb = Math.floor(sin * 127) + 128;
+  var hex = rgb.toString(16);
+
+  return hex.length === 1 ? "0"+hex : hex;
+}
+    
+function createNode(color) {
+    var parent = document.createElement("p");
+    var node = document.createTextNode(color);
+    var color = color || "red";
+    var bgColor = "background-color:"+color+";"
+    parent.setAttribute("style", bgColor)
+    parent.appendChild(node);
+    document.getElementById("rainbow").appendChild(parent);
+}
+    
+function rainbowMaker(index, color) {
+	for (i=0; i<index; i++) {
+    	createNode(color[i])
+    }
+}
+
+rainbowMaker(size, rainbow);
+    
+
+</script>
+
+</body>
+</html>
