@@ -126,6 +126,16 @@ var myParsed = JSON.parse(myString);
 myParsed
 ```
 
+### Miscellaneous
+
+In Javascript, the `…` will take each element of an array separately.
+
+```
+arr =[1, 2, 3, 4]
+String.fromCharCode(…arr)
+```
+Will return the string equivalent for all of the element of `arr`
+
 ## Test framework
 
 To test your javascript code, you might need the help of some test framework. As in other languages, they are here to help you write better code.
@@ -149,17 +159,45 @@ How to use, download here the source file or add this line in your html:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 
-## npm
+## Node.js
 
-You would need [Node.js](https://nodejs.org/en/) beforehand. Node.js is a free open source lightweight server framework that runs on javascript. 
-Node Package Manager (npm) needs [node.js](https://nodejs.org/en/). To install a module:
+[Node.js](https://nodejs.org/en/) is a javascript backend.
+
+### npm
+
+You would need beforehand. Node.js is a free open source lightweight server framework that runs on javascript. 
+Node Package Manager (npm) needs [node.js](https://nodejs.org/en/). To install a remote package:
 ```
-npm install module
+npm install <package>
 ```
 
-To run a module (it should be written on the doc, or it should have an `index.js`):
+To run a simple package (it should be written on the doc, or it should have an `index.js`):
 ```
 node index.js
+```
+
+### Build setup local node package
+
+Here are the basic operation that you can do on a local node package.
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
 ```
 
 ## Jekyll
