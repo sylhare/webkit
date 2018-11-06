@@ -31,6 +31,7 @@ Here is a list of nice links for CSS:
 - [CSS Grid for better cross plateform design](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout)
 - [CSS tricks](https://css-tricks.com/)
 - [Center in CSS generator](http://howtocenterincss.com/)
+- [30s solutions to CSS problem](https://atomiks.github.io/30-seconds-of-css/)
 
 ### Responsive navbar
 
