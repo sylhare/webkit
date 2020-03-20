@@ -10,7 +10,7 @@ p.serif {
 
 p.sansserif {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: medium;/* large, x-large */
+    font-size: medium; /* large, x-large */
     font-style: italic;
     font-weight: bold;
 }
