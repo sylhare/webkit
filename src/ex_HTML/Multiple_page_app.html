@@ -37,72 +37,73 @@
 </head>
 
 <body>
-    <script>
-        document.body.classList.add('fade');
+<script>
+    document.body.classList.add('fade');
 
-    </script>
+</script>
 
-    <script>
-        function show(shown, hidden) {
-            document.getElementById(shown).style.display = 'block';
-            document.getElementById(hidden).style.display = 'none';
-            return false;
-        }
+<script>
+    function show(shown, hidden) {
+        document.getElementById(shown).style.display = 'block';
+        document.getElementById(hidden).style.display = 'none';
+        return false;
+    }
 
-    </script>
+</script>
 
-    <h2>JavaScript Pages</h2>
+<h2>JavaScript Pages</h2>
 
-    <p>It hides the content of one part of the html in a div and display the other. </p>
+<p>It hides the content of one part of the html in a div and display the other. </p>
 
-    <div id="Page1">
-        Content of page 1
-        <br>
-        <br>
-        <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-    </div>
+<div id="Page1">
+    Content of page 1
+    <br>
+    <br>
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+</div>
 
-    <div id="Page2" style="display:none">
-        Content of page 2
-        <br>
-        <br>
-        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-    </div>
+<div id="Page2" style="display:none">
+    Content of page 2
+    <br>
+    <br>
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+</div>
 
 
-    <h2>CSS Pages</h2>
+<h2>CSS Pages</h2>
 
-    <p>Basically plays with where the div are on the view port to display only the clicked one. Can change the url as well.</p>
+<p>Basically plays with where the div are on the view port to display only the clicked one. Can change the url as
+    well.</p>
+
+<ul>
+    <li>Click <a href="#one">here</a> for page 1</li>
+    <li>Click <a href="#two">here</a> for page 2</li>
+</ul>
+
+<div class="page" id="one">
+    Content of page 1 goes here.
 
     <ul>
-        <li>Click <a href="#one">here</a> for page 1</li>
-        <li>Click <a href="#two">here</a> for page 2</li>
+        <li><a href="#">Back</a></li>
+        <li><a href="#two">Page 2</a></li>
     </ul>
+</div>
 
-    <div class="page" id="one">
-        Content of page 1 goes here.
+<div class="page" id="two">
+    Content of page 2 goes here.
 
-        <ul>
-            <li><a href="#">Back</a></li>
-            <li><a href="#two">Page 2</a></li>
-        </ul>
-    </div>
+    <ul>
+        <li><a href="#">Back</a></li>
+        <li><a href="#one">Page 1</a></li>
+    </ul>
+</div>
 
-    <div class="page" id="two">
-        Content of page 2 goes here.
+<script>
+    document.addEventListener("DOMContentLoaded", function (e) {
+        document.body.classList.remove('fade');
+    });
 
-        <ul>
-            <li><a href="#">Back</a></li>
-            <li><a href="#one">Page 1</a></li>
-        </ul>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function(e) {
-            document.body.classList.remove('fade');
-        });
-
-    </script>
+</script>
 </body>
 
 </html>

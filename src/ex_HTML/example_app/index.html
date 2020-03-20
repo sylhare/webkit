@@ -4,52 +4,52 @@
 <head>
     <meta charset="utf-8">
     <title>tod</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script language="javascript" src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div id="mainContent">
-        <div id="logo"></div>
-        <div>
-            <div id="view">
-                <p>Test ?</p>
-                <p id="helloText">?</p>
-            </div>
-            <div id="leftPanel">
-                <div id="timer"></div>
-                <div id="turn"></div>
-            </div>
+<div id="mainContent">
+    <div id="logo"></div>
+    <div>
+        <div id="view">
+            <p>Test ?</p>
+            <p id="helloText">?</p>
         </div>
-        <div id="button">
-            <button id="clickButton" class="buttonStyle" type="button" onclick="doSomething()">Click Me!</button>
-            <button class="buttonStyle" type="button" onclick="alert('Hello world!')">Click Me!</button>
-            <button class="buttonStyle" type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <div id="leftPanel">
+            <div id="timer"></div>
+            <div id="turn"></div>
         </div>
     </div>
-
-
-    <!-- Multiple Checkboxes (inline) -->
-    <div class="form-group">
-        <label class="col-md-4 control-label" for="checkboxes">level</label>
-        <div class="col-md-4">
-            <label class="checkbox-inline" for="checkboxes-0">
-                <input name="checkboxes" id="checkboxes-0" value="0" type="checkbox"> 1
-            </label>
-            <label class="checkbox-inline" for="checkboxes-1">
-                <input name="checkboxes" id="checkboxes-1" value="1" type="checkbox"> 2
-            </label>
-            <label class="checkbox-inline" for="checkboxes-2">
-                <input name="checkboxes" id="checkboxes-2" value="2" type="checkbox"> 3
-            </label>
-            <label class="checkbox-inline" for="checkboxes-3">
-                <input name="checkboxes" id="checkboxes-3" value="3" type="checkbox"> 4
-            </label>
-            <label class="checkbox-inline" for="checkboxes-4">
-                <input name="checkboxes" id="checkboxes-4" value="4" type="checkbox"> 5
-            </label>
-        </div>
+    <div id="button">
+        <button class="buttonStyle" id="clickButton" onclick="doSomething()" type="button">Click Me!</button>
+        <button class="buttonStyle" onclick="alert('Hello world!')" type="button">Click Me!</button>
+        <button class="buttonStyle" onclick="alert('Hello world!')" type="button">Click Me!</button>
     </div>
+</div>
+
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="checkboxes">level</label>
+    <div class="col-md-4">
+        <label class="checkbox-inline" for="checkboxes-0">
+            <input id="checkboxes-0" name="checkboxes" type="checkbox" value="0"> 1
+        </label>
+        <label class="checkbox-inline" for="checkboxes-1">
+            <input id="checkboxes-1" name="checkboxes" type="checkbox" value="1"> 2
+        </label>
+        <label class="checkbox-inline" for="checkboxes-2">
+            <input id="checkboxes-2" name="checkboxes" type="checkbox" value="2"> 3
+        </label>
+        <label class="checkbox-inline" for="checkboxes-3">
+            <input id="checkboxes-3" name="checkboxes" type="checkbox" value="3"> 4
+        </label>
+        <label class="checkbox-inline" for="checkboxes-4">
+            <input id="checkboxes-4" name="checkboxes" type="checkbox" value="4"> 5
+        </label>
+    </div>
+</div>
 
 </body>
 

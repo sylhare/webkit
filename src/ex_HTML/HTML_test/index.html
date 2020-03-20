@@ -3,206 +3,215 @@
 <head>
     <title>Test page</title>
     <!-- <style> in CSS part </style> -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <!--<script> in JS part </script>-->
-    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <script language="javascript" src="script.js" type="text/javascript"></script>
 
 </head>
 
 <body bgcolor="#6699CC" onLoad="progress()">
 
-    <header align="Center">
-        <font color="#FFFFFF"> Testing HTML </font>
-    </header>
+<header align="Center">
+    <font color="#FFFFFF"> Testing HTML </font>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About us</a></li>
-        </ul>
-    </nav>
-
-    <p>This is regular text </p>
-    <p><b>bold text </b></p>
-    <p><big> big text </big></p>
-    <p><i> italic text </i></p>
-    <p><em>This is em text </em></p>
-    <p><small> small text </small></p>
-    <p><strong> strong text </strong></p>
-    <p><sub> subscripted text </sub></p>
-    <p><sup> superscripted text </sup></p>
-    <p><ins> inserted text </ins></p>
-    <p><del> deleted text </del></p>
-
-    <hr width="50px" />
-
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
-
-    <img src="http://www.sololearn.com/images/tree.jpg" height="4%" width="20%" border="1px" alt="" />
-
-    <br />
-
-    <body>
-        <div id="container">
-            <div id="box"> </div>
-        </div>
-    </body>
-
-    <a href="http://www.sololearn.com" target="_blank"> Learn Playing </a>
-    <!-- Having a blank attribute make the link open in a new tab -->
-
-    <ol>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Green</li>
-    </ol>
+<nav>
     <ul>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Green</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
     </ul>
+</nav>
 
-    <table border="2" align="Center">
-        <tr>
-            <td bgcolor="red">Red</td>
-            <td>Blue</td>
-            <td>Green</td>
-        </tr>
-        <tr>
-            <td>Yellow</td>
-            <td colspan="2">Orange</td>
-        </tr>
-    </table>
+<p>This is regular text </p>
+<p><b>bold text </b></p>
+<p><big> big text </big></p>
+<p><i> italic text </i></p>
+<p><em>This is em text </em></p>
+<p>
+    <small> small text</small>
+</p>
+<p><strong> strong text </strong></p>
+<p><sub> subscripted text </sub></p>
+<p><sup> superscripted text </sup></p>
+<p>
+    <ins> inserted text</ins>
+</p>
+<p>
+    <del> deleted text</del>
+</p>
 
-    <h2>Some
-        <span style="color:red">Important</span> Message
-    </h2>
+<hr width="50px"/>
 
-    <div style="background-color:green; color:white; padding:20px;">
-        <p>Some paragraph text goes here.</p>
-        <p>Another paragraph goes here.</p>
-    </div>
-    <br />
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 
-    <input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
-    <br />
-    <input id="car" type="text" list="colors" placeholder="datalist" />
-    <datalist id="colors">
+<img alt="" border="1px" height="4%" src="http://www.sololearn.com/images/tree.jpg" width="20%"/>
+
+<br/>
+
+<body>
+<div id="container">
+    <div id="box"></div>
+</div>
+</body>
+
+<a href="http://www.sololearn.com" target="_blank"> Learn Playing </a>
+<!-- Having a blank attribute make the link open in a new tab -->
+
+<ol>
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Green</li>
+</ol>
+<ul>
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Green</li>
+</ul>
+
+<table align="Center" border="2">
+    <tr>
+        <td bgcolor="red">Red</td>
+        <td>Blue</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td>Yellow</td>
+        <td colspan="2">Orange</td>
+    </tr>
+</table>
+
+<h2>Some
+    <span style="color:red">Important</span> Message
+</h2>
+
+<div style="background-color:green; color:white; padding:20px;">
+    <p>Some paragraph text goes here.</p>
+    <p>Another paragraph goes here.</p>
+</div>
+<br/>
+
+<input id="tel" name="tel" placeholder="555.555.1211" type="tel"/>
+<br/>
+<input id="car" list="colors" placeholder="datalist" type="text"/>
+<datalist id="colors">
     <option value="Red">
     <option value="Green">
     <option value="Yellow">
 </datalist>
-    <br />
-    <input id="mysearch" name="searchitem" type="search" placeholder="search" /><br />
+<br/>
+<input id="mysearch" name="searchitem" placeholder="search" type="search"/><br/>
 
 
-    <br />
-    <input type="checkbox" name="gender" value="1" /> Pepper <br />
-    <input type="checkbox" name="gender" value="2" /> Salt <br />
+<br/>
+<input name="gender" type="checkbox" value="1"/> Pepper <br/>
+<input name="gender" type="checkbox" value="2"/> Salt <br/>
 
-    <input type="radio" name="gender" value="male" /> Male <br />
-    <input type="radio" name="gender" value="female" />Female <br />
+<input name="gender" type="radio" value="male"/> Male <br/>
+<input name="gender" type="radio" value="female"/>Female <br/>
 
-    <br />
+<br/>
 
-    <form action="url" method="POST">
+<form action="url" method="POST">
 
-        <label for="e-mail">Email: </label>
-        <input name="Email" type="text" placeholder="email@example.com" autofocus required />
-        <br />
-        <label name="password"> Password</label>
-        <input type="password" name="password" />
-        <br />
-        <input type="submit" value="Submit" />
-    </form>
+    <label for="e-mail">Email: </label>
+    <input autofocus name="Email" placeholder="email@example.com" required type="text"/>
+    <br/>
+    <label name="password"> Password</label>
+    <input name="password" type="password"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
 
-    <br />
-    <!-- Not suported with html 5
-        <frameset cols="25%,50%,25%">
-           <frame src="a.htm" />
-           <frame src="b.htm" />
-           <frame src="c.htm" />
-           <noframes>Frames not supported!</noframes>
-        </frameset>
-        -->
+<br/>
+<!-- Not suported with html 5
+    <frameset cols="25%,50%,25%">
+       <frame src="a.htm" />
+       <frame src="b.htm" />
+       <frame src="c.htm" />
+       <noframes>Frames not supported!</noframes>
+    </frameset>
+    -->
 
-    <!-- article tag replace div tag in hTML5 -->
-    Status: <progress id="progressBar" max="100" value="35"> 
+<!-- article tag replace div tag in hTML5 -->
+Status:
+<progress id="progressBar" max="100" value="35">
 </progress>
 
 
-    <article>
-        <h1> Gifts for everyone</h1>
-        <p>This website will be the best place for choosing gifts</p>
-        <aside>
-            <p>Gifts will be delivered to you within 24 hours</p>
-        </aside>
+<article>
+    <h1> Gifts for everyone</h1>
+    <p>This website will be the best place for choosing gifts</p>
+    <aside>
+        <p>Gifts will be delivered to you within 24 hours</p>
+    </aside>
 
-        <h1>Welcome</h1>
-        <section>
-            <h1>Heading</h1>
-            <p>content or image</p>
-        </section>
+    <h1>Welcome</h1>
+    <section>
+        <h1>Heading</h1>
+        <p>content or image</p>
+    </section>
 
-    </article>
+</article>
 
-    <audio controls>
+<audio controls>
     <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
     <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
 </audio>
 
-    <audio src="http://www.sololearn.com/uploads/audio.mp3" controls>
+<audio controls src="http://www.sololearn.com/uploads/audio.mp3">
     Audio element not supported by your browser
 </audio>
 
-    <video controls>
-   <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
-   <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
-   Video is not supported by your browser
+<video controls>
+    <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+    <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
+    Video is not supported by your browser
 </video>
 
-    <div id="boxDrop" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; 
-   width:200px; height:200px"> Drag&Drop Box </div>
+<div id="boxDrop" ondragover="allowDrop(event)" ondrop="drop(event)" style="border:1px solid black;
+   width:200px; height:200px"> Drag&Drop Box
+</div>
 
-    <img id="image" src="sample.jpg" draggable="true" ondragstart="drag(event)" width="150" height="50" alt="" />
+<img alt="" draggable="true" height="50" id="image" ondragstart="drag(event)" src="sample.jpg" width="150"/>
 
-    <canvas id="canvas1" width="10" height="40"> Javascript for Canvas in the JS part does not work and need to be added in a script tag HTML
-        </canvas>
+<canvas height="40" id="canvas1" width="10"> Javascript for Canvas in the JS part does not work and need to be added in
+    a script tag HTML
+</canvas>
 
-    <svg width="300" height="300">
-<polygon points="100 100, 200 200, 300 0" 
-      style="fill: lime; stroke:black;" />
+<svg height="300" width="300">
+    <polygon points="100 100, 200 200, 300 0"
+             style="fill: lime; stroke:black;"/>
 </svg>
-    <svg height="200" width="400">
-   <ellipse cx="200" cy="100" rx="100" ry="70" style="fill: purple" />
+<svg height="200" width="400">
+    <ellipse cx="200" cy="100" rx="100" ry="70" style="fill: purple"/>
 </svg>
-    <svg width="220" height="220">
-    <polyline style="stroke-linejoin:miter; stroke:black; 
-        stroke-width:12; fill: none;"
-        points="100 100, 150 150, 200 100" />
+<svg height="220" width="220">
+    <polyline points="100 100, 150 150, 200 100"
+              style="stroke-linejoin:miter; stroke:black;
+        stroke-width:12; fill: none;"/>
 </svg>
-    <svg width="1000" height="250">
-    <rect width="150" height="150" fill="orange">
-        <animate attributeName="x" from="0" to="300"
-      dur="3s" fill="freeze" repeatCount="indefinite"/> 
+<svg height="250" width="1000">
+    <rect fill="orange" height="150" width="150">
+        <animate attributeName="x" dur="3s" fill="freeze"
+                 from="0" repeatCount="indefinite" to="300"/>
     </rect>
 </svg>
-    <svg width="220" height="200">
-    <line x1="10" y1="10" x2="200" y2="100" 
-        style="stroke:#000000; stroke-linecap:round; 
-        stroke-width:20"  />
+<svg height="200" width="220">
+    <line style="stroke:#000000; stroke-linecap:round;
+        stroke-width:20" x1="10" x2="200" y1="10"
+          y2="100"/>
 </svg>
-    <svg width="200" height="200">
-   <circle cx="80" cy="80" r="50" fill="yellow" />
+<svg height="200" width="200">
+    <circle cx="80" cy="80" fill="yellow" r="50"/>
 </svg>
 
-    <footer> test </footer>
+<footer> test</footer>
 
 </body>
 
