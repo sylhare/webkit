@@ -22,6 +22,7 @@ Here is a list of nice links for HTML:
 
 - [getting started](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - Simple HTML examples : [samdutton/simpl](https://github.com/samdutton/simpl)
+- Generate favicon with [real favicon generator](https://realfavicongenerator.net/)
 
 ## CSS
 
