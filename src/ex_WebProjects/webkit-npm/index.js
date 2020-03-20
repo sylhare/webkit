@@ -24,17 +24,17 @@ var server = http.createServer(function (req, res) {
             ' </head>' +
             ' <body>' +
             ' <h1> Hello World </h1>' +
-            ' <p>Here is a paragraph of <strong>HTML</strong>!</p>' );
-        
+            ' <p>Here is a paragraph of <strong>HTML</strong>!</p>');
+
         // http://localhost:3000/?firstname=John&lastname=Doe
         if ('firstname' in params && 'lastname' in params) {
             res.write('<p>Your name is ' + params['firstname'] + ' ' + params['lastname'] + '</p>');
         } else {
             res.write('<p>You do have a first name and a last name, don\'t you?</p>');
         }
-        
+
         res.write(' </body>' +
-                  '</html>');
+            '</html>');
         res.end();
     } else if (page === '/index') {
         res.write('You\'re in the index page, there is nothing to see');
@@ -43,11 +43,11 @@ var server = http.createServer(function (req, res) {
     }
 });
 
-server.on('request', function(req, res) { 
+server.on('request', function (req, res) {
     console.log('server is on, req: ' + req + ', res: ' + req);
 });
 
-server.on('close', function() { // We listened to the close event
+server.on('close', function () { // We listened to the close event
     console.log('The server closed');  // say goodbye when the server is closed
     greet.sayGoodbye();
 });

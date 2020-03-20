@@ -5,7 +5,7 @@ var myEvent = new EventEmitter();
 
 myEvent.emit('test', 'event message');
 
-myEvent.on('test', function(message){
+myEvent.on('test', function (message) {
     console.log(message);
 });
 

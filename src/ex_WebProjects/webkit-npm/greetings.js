@@ -1,9 +1,9 @@
 /* module example */
-var sayHello = function() {
+var sayHello = function () {
     console.log('Hello!');
 };
 
-var sayGoodbye = function() {
+var sayGoodbye = function () {
     console.log('Goodbye!');
 };
 
