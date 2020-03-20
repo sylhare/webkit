@@ -12,10 +12,10 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="/static/js/analytics.js?v=1494891701.0" charset="utf-8"></script>
+    <script charset="utf-8" src="/static/js/analytics.js?v=1494891701.0" type="text/javascript"></script>
 
-    <link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1494891701.0" />
-    <link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1494891701.0" />
+    <link href="/static/css/banner-styles.css?v=1494891701.0" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/iconochive.css?v=1494891701.0" rel="stylesheet" type="text/css"/>
 
     <!-- End Wayback Rewrite JS Include -->
     <title>LocalStorage Example - Gameplay Passion | Let's Play !</title>
@@ -39,7 +39,7 @@
         }
 
         // this code is executed after the page loads
-        window.addEvent("domready", function() {
+        window.addEvent("domready", function () {
             // Div object where we'll display localStorage availability
             var supportDiv = document.id("localStorageSupport");
 
@@ -58,7 +58,7 @@
             }
 
             // handling click on "save"
-            document.id("save").addEvent("click", function() {
+            document.id("save").addEvent("click", function () {
                 // creating a literal object "progress" filled with values from inputs
                 var progress = {
                     nickname: document.id("input_nickname").value,
@@ -70,7 +70,7 @@
             });
 
             // handling click on "load"
-            document.id("load").addEvent("click", function() {
+            document.id("load").addEvent("click", function () {
                 // decoding "progress" from local storage
                 var progress = JSON.decode(localStorage["progress"]);
 
@@ -86,7 +86,7 @@
         /*
   * CSS Styles
   */
-        
+
         #localStorageSupport {
             width: 200px;
             height: 50px;
@@ -103,18 +103,18 @@
 </head>
 
 <body>
-    <div id="localStorageSupport">Local Storage Support</div>
+<div id="localStorageSupport">Local Storage Support</div>
 
-    <div>
-        Nickname :
-        <input id="input_nickname" type="text" value="ZED" />
-        <br/> Faction :
-        <input id="input_faction" type="text" value="Night Elves" />
-        <br/>
+<div>
+    Nickname :
+    <input id="input_nickname" type="text" value="ZED"/>
+    <br/> Faction :
+    <input id="input_faction" type="text" value="Night Elves"/>
+    <br/>
 
-        <button id="save">SAVE</button>
-        <button id="load">LOAD</button>
-    </div>
+    <button id="save">SAVE</button>
+    <button id="load">LOAD</button>
+</div>
 </body>
 
 </html>

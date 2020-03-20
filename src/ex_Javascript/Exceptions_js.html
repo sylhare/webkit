@@ -3,60 +3,60 @@
 
 <body>
 
-    <p>Please input a number between 5 and 10:</p>
+<p>Please input a number between 5 and 10:</p>
 
-    <input id="demo" type="text">
-    <button type="button" onclick="myFunction()">Test Input</button>
-    <p id="message"></p>
+<input id="demo" type="text">
+<button onclick="myFunction()" type="button">Test Input</button>
+<p id="message"></p>
 
-    <script>
-        function myFunction() {
-            var message, x;
-            message = document.getElementById("message");
-            message.innerHTML = "";
-            x = document.getElementById("demo").value;
-            try {
-                if (x === "") throw new TypeError("empty");
-                if (isNaN(x)) throw "not a number";
-                if (x > 10) throw "too high";
-                if (x < 5) throw "too low";
-                if (x === 5) throw {
-                    name: "System Error",
-                    level: "Show Stopper",
-                    message: "Error detected. Please contact the system administrator.",
-                    htmlMessage: "Error detected. Please contact the <a href=\"mailto:sysadmin@acme-widgets.com\">system administrator</a>.",
-                    toString: function() {
-                        return this.name + ": " + this.message;
-                    }
-                };
-            } catch (err) {
-                message.innerHTML = "Input " + err.name + ': ' + err.message + err.toString();
-            }
-        }
-
-        const customError = new Error('I was constructed via the "new" keyword!');
-
+<script>
+    function myFunction() {
+        var message, x;
+        message = document.getElementById("message");
+        message.innerHTML = "";
+        x = document.getElementById("demo").value;
         try {
-            try {
-                //throw new Error("oups");
-                throw customError;
-            } catch (ex) {
-                console.error("interne", ex.message);
-            } finally {
-                console.log("finally");
-            }
-        } catch (ex) {
-            console.error("externe", ex.message);
+            if (x === "") throw new TypeError("empty");
+            if (isNaN(x)) throw "not a number";
+            if (x > 10) throw "too high";
+            if (x < 5) throw "too low";
+            if (x === 5) throw {
+                name: "System Error",
+                level: "Show Stopper",
+                message: "Error detected. Please contact the system administrator.",
+                htmlMessage: "Error detected. Please contact the <a href=\"mailto:sysadmin@acme-widgets.com\">system administrator</a>.",
+                toString: function () {
+                    return this.name + ": " + this.message;
+                }
+            };
+        } catch (err) {
+            message.innerHTML = "Input " + err.name + ': ' + err.message + err.toString();
         }
+    }
 
-    </script>
+    const customError = new Error('I was constructed via the "new" keyword!');
 
-    <!--
-        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error 
-        https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/try...catch
-        https://stackoverflow.com/questions/464359/custom-exceptions-in-javascript
-        https://www.w3schools.com/js/js_errors.asp
-    -->
+    try {
+        try {
+            //throw new Error("oups");
+            throw customError;
+        } catch (ex) {
+            console.error("interne", ex.message);
+        } finally {
+            console.log("finally");
+        }
+    } catch (ex) {
+        console.error("externe", ex.message);
+    }
+
+</script>
+
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
+    https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/try...catch
+    https://stackoverflow.com/questions/464359/custom-exceptions-in-javascript
+    https://www.w3schools.com/js/js_errors.asp
+-->
 
 </body>
 

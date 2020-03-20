@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 <body>
 
 <p> Click the button to display a random number. </p>
 
-<button onclick = "myFunction()"> Try it </button>
+<button onclick="myFunction()"> Try it</button>
 
-<p id = "demo" > </p>
+<p id="demo"></p>
 
 <script>
     var empty = Array.apply(null, Array(8)).map(Number.prototype.valueOf, 0);
     document.write(empty);
-   
+
     function myFunction() {
-		
+
         var arr = [];
-      
+
         while (arr.length < 8) {
             var randomnumber = Math.ceil(Math.random() * 100);
             if (arr.indexOf(randomnumber) > -1) {
@@ -30,9 +29,9 @@
             return a - b
         });
         document.write(arr);
-    } 
-    
-    
+    }
+
+
 </script>
-</body> 
+</body>
 </html>

@@ -1,5 +1,3 @@
-
-
 const isPalindrome = (str) => {
     // noinspection JSAnnotator
     return str
@@ -28,18 +26,18 @@ add_elem = function (options) {
     para.appendChild(node);
     var element = document.body;
     element.appendChild(para);
-  };
+};
 
-describe("dom manipulation", function (){
+describe("dom manipulation", function () {
 
-  afterEach(function (){
-      var body = document.body;
-      body.removeChild(body.lastElementChild);
-  });
-
-  it("should add an element", function (){
-    add_elem();
-    expect(document.body.children.length).toEqual(2);
+    afterEach(function () {
+        var body = document.body;
+        body.removeChild(body.lastElementChild);
     });
-    
+
+    it("should add an element", function () {
+        add_elem();
+        expect(document.body.children.length).toEqual(2);
+    });
+
 });

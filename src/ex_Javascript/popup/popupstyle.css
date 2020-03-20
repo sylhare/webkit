@@ -1,17 +1,17 @@
-#jAlert_table, #jAlert_th, #jAlert_td{
+#jAlert_table, #jAlert_th, #jAlert_td {
     border: 2px solid blue;
-    background-color:lightblue;
+    background-color: lightblue;
     border-collapse: collapse;
     width: 100px;
 }
 
-#jAlert_th, #jAlert_td{
+#jAlert_th, #jAlert_td {
     padding: 5px 10px;
 }
 
-#jAlert{
+#jAlert {
     /* Position fixed */
-    position:fixed;
+    position: fixed;
     /* Center it! */
     top: 50%;
     left: 50%;

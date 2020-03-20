@@ -32,8 +32,8 @@
 
         */
 
-        $(document).ready(function() {
-            $("button").click(function() {
+        $(document).ready(function () {
+            $("button").click(function () {
                 getCall(url);
                 ajaxGet(url, show);
                 ajaxCall(url, "GET", "json");
@@ -43,7 +43,7 @@
         // With JQuery $get
         // $.get(URL,data,function(data,status,xhr),dataType)
         function getCall(url) {
-            $.get(url, function(data, status) {
+            $.get(url, function (data, status) {
                 show(JSON.stringify(data), status);
             });
         }
@@ -54,18 +54,21 @@
                 url: url,
                 type: type,
                 dataType: dataType,
-                success: function(data, status) {
+                success: function (data, status) {
                     show(JSON.stringify(data), status)
                 },
-                error: function(result, status, error) {},
-                complete: function(result, error) {}
+                error: function (result, status, error) {
+                },
+                complete: function (result, error) {
+                }
             });
         }
+
         // With Javascript and XMLHttpRequest
         function ajaxGet(url, callback) {
             var req = new XMLHttpRequest();
             req.open("GET", url);
-            req.addEventListener("load", function() {
+            req.addEventListener("load", function () {
                 // status >= 200 means the GET was successfull, if over 400 means it failed
                 if (req.status >= 200 && req.status < 400) {
                     callback(req.responseText, req.status);
@@ -73,7 +76,7 @@
                     console.error(req.status + " " + req.statusText + " " + url);
                 }
             });
-            req.addEventListener("error", function() {
+            req.addEventListener("error", function () {
                 console.error("Network error with url: " + url);
             });
             req.send(null);
@@ -90,7 +93,7 @@
 
 <body>
 
-    <button>Send an HTTP GET request and get the result back</button>
+<button>Send an HTTP GET request and get the result back</button>
 
 </body>
 

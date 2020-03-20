@@ -7,7 +7,6 @@ if (typeof (Storage) !== "undefined") {
 }
 
 
-
 function setArrayLocal(name, array) {
     /* Transform the array into text to save it in localStorage */
     var text = array.toString();
@@ -25,4 +24,4 @@ function getArrayLocal(name) {
 sessionStorage.username = "John";
 
 // Accède à une donnée stockée
-alert( "username = " + sessionStorage.username );
+alert("username = " + sessionStorage.username);

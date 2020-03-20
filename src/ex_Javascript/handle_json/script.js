@@ -121,6 +121,6 @@ var json = (function () {
         }
     });
     return json;
-})(); 
+})();
 
 //console.log(json);

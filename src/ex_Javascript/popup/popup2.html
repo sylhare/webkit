@@ -1,31 +1,15 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="googlebot" content="noindex, nofollow">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="noindex, nofollow" name="robots">
+    <meta content="noindex, nofollow" name="googlebot">
 
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
 
-
-
-
-
-
-
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-
-
-
-
-
-
-
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-
-
+    <link href="/css/result-light.css" rel="stylesheet" type="text/css">
 
 
     <style type="text/css">
@@ -39,7 +23,7 @@
             background: rgba(0, 0, 0, 0.3) url(tp.png);
             /* required by MSIE to prevent actions on lower z-index elements */
         }
-        
+
         #alertBox {
             position: relative;
             width: 300px;
@@ -48,11 +32,11 @@
             border: 1px solid #666;
             background: #fff no-repeat 20px 30px;
         }
-        
-        #modalContainer>#alertBox {
+
+        #modalContainer > #alertBox {
             position: fixed;
         }
-        
+
         #alertBox h1 {
             margin: 0;
             font: bold 0.9em verdana, arial;
@@ -61,14 +45,14 @@
             border-bottom: 1px solid #000;
             padding: 2px 0 2px 5px;
         }
-        
+
         #alertBox p {
             font: 0.7em verdana, arial;
             height: 50px;
             padding-left: 5px;
             margin-left: 55px;
         }
-        
+
         #alertBox #closeBtn {
             display: block;
             position: relative;
@@ -84,8 +68,9 @@
             border-radius: 3px;
             text-decoration: none;
         }
+
         /* unrelated styles */
-        
+
         #mContainer {
             position: relative;
             width: 600px;
@@ -95,7 +80,7 @@
             border-bottom: 2px solid #000;
             font: 0.7em verdana, arial;
         }
-        
+
         h1,
         h2 {
             margin: 0;
@@ -103,12 +88,12 @@
             font: bold 1.5em verdana;
             border-bottom: 1px solid #000;
         }
-        
+
         code {
             font-size: 1.2em;
             color: #069;
         }
-        
+
         #credits {
             position: relative;
             margin: 25px auto 0 auto;
@@ -119,7 +104,7 @@
             height: 90px;
             padding-top: 4px;
         }
-        
+
         #credits img {
             float: left;
             margin: 5px 10px 5px 0;
@@ -127,12 +112,12 @@
             width: 80px;
             height: 79px;
         }
-        
+
         .important {
             background-color: #F5FCC8;
             padding: 2px;
         }
-        
+
         code span {
             color: green;
         }
@@ -142,19 +127,14 @@
     <title> by vivekkt91</title>
 
 
-
-
-
-
-
     <script type="text/javascript">
         //<![CDATA[
-        $(window).load(function() {
+        $(window).load(function () {
             var ALERT_TITLE = "Oops!";
             var ALERT_BUTTON_TEXT = "Ok";
 
             if (document.getElementById) {
-                window.alert = function(txt) {
+                window.alert = function (txt) {
                     createCustomAlert(txt);
                 }
             }
@@ -186,7 +166,7 @@
                 btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
                 btn.href = "#";
                 btn.focus();
-                btn.onclick = function() {
+                btn.onclick = function () {
                     removeCustomAlert();
                     return false;
                 };
@@ -210,28 +190,25 @@
 </head>
 
 <body>
-    <input value="Test the alert" onclick="alert('Alert this pages');" type="button">
+<input onclick="alert('Alert this pages');" type="button" value="Test the alert">
 
-    <script>
-        // tell the embed parent frame the height of the content
-        if (window.parent && window.parent.parent) {
-            window.parent.parent.postMessage(["resultsFrame", {
-                height: document.body.getBoundingClientRect().height,
-                slug: "bds77"
-            }], "*")
-        }
+<script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent) {
+        window.parent.parent.postMessage(["resultsFrame", {
+            height: document.body.getBoundingClientRect().height,
+            slug: "bds77"
+        }], "*")
+    }
 
-    </script>
-
-
+</script>
 
 
-
-    <div id="modalContainer" style="height: 536px;">
-        <div id="alertBox" style="left: 170px; display: block;">
-            <h1>Oops!</h1>
-            <p>Alert this pages</p><a id="closeBtn" href="#">Ok</a></div>
-    </div>
+<div id="modalContainer" style="height: 536px;">
+    <div id="alertBox" style="left: 170px; display: block;">
+        <h1>Oops!</h1>
+        <p>Alert this pages</p><a href="#" id="closeBtn">Ok</a></div>
+</div>
 </body>
 
 </html>
