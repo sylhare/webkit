@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Demonstration of the pure CSS parallax scrolling concept">
+    <title>A pure CSS parallax demo</title>
+    <style>
+        body {
+            perspective: 20px;
+            perspective-origin: 0%;
+            transform-style: preserve-3d;
+        }
+        * {
+            margin: 0;
+        }
+        body {
+            display: grid;
+        }
+        picture {
+            transform-origin: 0 0;
+            transform: translateZ(-2px) translatey(-5%);
+        }
+        picture img {
+            position: sticky;
+            top: 0;
+            transform-origin: 0 0;
+            transform: scale(1.1);
+        }
+
+        picture,
+        header {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        header {
+            margin-top: 56%;
+        }
+
+        .header-content {
+            height: 100vh;
+            background: tomato;
+            border: solid;
+            transform: scale(1);
+            z-index: 1;
+        }
+
+        .header-content:nth-child(odd) {
+            background: repeating-linear-gradient(45deg, transparent 3px, gray 6px, gray 7px), repeating-linear-gradient(-45deg, transparent 3px, gray 6px, gray 7px)
+        }
+        main section {height:100vh;background:#bed}
+    </style>
+</head>
+
+<body>
+
+
+<picture style="width:100%;">
+    <img class="main-img" sizes="(max-width: 1980px) calc(100vw - 1.2em), 1980px" srcset="
+        https://dummyimage.com/640x380&text=small   640w,
+        https://dummyimage.com/1280x720&text=medium 1280w,
+        https://dummyimage.com/1980x1080&text=large   1980w
+      " src="https://dummyimage.com/1200x600&text=medium.jpg" />
+</picture>
+<header>
+    <div class="header-content">
+        .......
+    </div>
+    <div class="header-content">
+        .......
+    </div>
+    <div class="header-content">
+        .......
+    </div>
+    <div class="header-content">
+        .......
+    </div>
+    <div class="header-content">
+        .......
+    </div>
+    <div class="header-content">
+        .......
+    </div>
+
+</header>
+<main> Main
+    <section>Section</section>
+</main>
+
+
+
+</body>
+</html>
