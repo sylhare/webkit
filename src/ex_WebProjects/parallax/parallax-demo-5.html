@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Demonstration of the pure CSS parallax scrolling concept">
+    <title>CSS parallax demo</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: inherit;
+        }
+
+        body {
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        .parallax-container {
+            border: 1px solid red;
+            position: relative;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 2px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parallax-section, .static-section {
+            height: 100vh;
+        }
+
+        .parallax-section {
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+
+        .parallax-section:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 3px solid blue;
+            background-image: url(https://asiamountains.net/upload/slide/slide-1960x857-07.jpg);
+            background-repeat: no-repeat;
+
+            transform: translateZ(-1px) scale(1.5);
+            z-index: -1;
+        }
+
+        .static-section {
+            background-color: darkgrey;
+            color: white;
+            position: relative;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <header class="header">
+
+    </header>
+    <main class="parallax-container">
+        <section class="parallax-section parallax-section--hero">
+            HERO
+        </section>
+        <section class="static-section static-section--about">
+            ABOUT
+        </section>
+        <section class="parallax-section parallax-section--testimonials">
+            TESTIMONIALS
+        </section>
+        <section class="static-section static-section--footer">
+            FOOTER
+        </section>
+    </main>
+</main>
+
+</body>
+</html>
