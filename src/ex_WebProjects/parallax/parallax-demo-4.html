@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Demonstration of the pure CSS parallax scrolling concept">
+    <title>CSS parallax demo</title>
+    <style>
+
+        h1 {
+            margin: unset;
+        }
+
+        .navbar {
+            background: #1fb8eb;
+            height: 2%;
+            display: block;
+        }
+
+        .parallax-img {
+            z-index: -1;
+            top: 2%;
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .parallax-img img {
+            width: 100%;
+        }
+
+        .parallax-window {
+            background: repeating-linear-gradient(45deg, transparent 3px, gray 6px, gray 7px), repeating-linear-gradient(-45deg, transparent 3px, gray 6px, gray 7px);
+            top: 10%;
+            height: 300px;
+            width: 100%;
+            position: fixed;
+        }
+
+        .content {
+            top: 400px;
+            background: #3e8f3e;
+            padding-bottom: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<main>
+    <div class="navbar">
+        <h1>Fun fact:</h1>
+    </div>
+    <div class="parallax-img">
+        <img src="./pexels-teh-yu-song.jpg"  alt="test"/>
+    </div>
+    <div class="parallax-window">
+    </div>
+    <div class="content">
+        <h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!</h1>
+        <h1>Have a nice day!</h1>
+    </div>
+</main>
+
+
+</body>
+</html>
