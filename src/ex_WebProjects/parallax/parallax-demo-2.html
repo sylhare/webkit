@@ -8,8 +8,9 @@
     <style>
         body {
             perspective: 20px;
-            perspective-origin: 0%;
+            perspective-origin: -20px;
             transform-style: preserve-3d;
+            z-index: 1;
         }
         * {
             margin: 0;
@@ -24,8 +25,10 @@
         picture img {
             position: sticky;
             top: 0;
-            transform-origin: 0 0;
-            transform: scale(1.1);
+            height: 600px;
+            transform-origin: 0 10%;
+            transform: scale(1.7);
+            z-index: -100;
         }
 
         picture,
@@ -46,7 +49,28 @@
             z-index: 1;
         }
 
-        .header-content:nth-child(odd) {
+        .navbar {
+            top: 0;
+            height: 70px;
+            position: fixed;
+            width: 100%;
+        }
+
+        .window {
+            top: 70px;
+            width: 100%;
+            position: fixed;
+            height: 300px;
+        }
+
+        .content {
+            top: 370px;
+            width: 100%;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .header-content:nth-child(even) {
             background: repeating-linear-gradient(45deg, transparent 3px, gray 6px, gray 7px), repeating-linear-gradient(-45deg, transparent 3px, gray 6px, gray 7px)
         }
         main section {height:100vh;background:#bed}
@@ -60,28 +84,28 @@
     <img class="main-img" sizes="(max-width: 1980px) calc(100vw - 1.2em), 1980px" srcset="
         https://dummyimage.com/640x380&text=small   640w,
         https://dummyimage.com/1280x720&text=medium 1280w,
-        https://dummyimage.com/1980x1080&text=large   1980w
+        ./pexels-teh-yu-song.jpg  1980w
       " src="https://dummyimage.com/1200x600&text=medium.jpg" />
 </picture>
 <header>
-    <div class="header-content">
+    <div class="header-content navbar">
         .......
     </div>
-    <div class="header-content">
+    <div class="header-content window">
         .......
     </div>
-    <div class="header-content">
+    <div class="header-content content">
         .......
     </div>
-    <div class="header-content">
-        .......
-    </div>
-    <div class="header-content">
-        .......
-    </div>
-    <div class="header-content">
-        .......
-    </div>
+<!--    <div class="header-content">-->
+<!--        .......-->
+<!--    </div>-->
+<!--    <div class="header-content">-->
+<!--        .......-->
+<!--    </div>-->
+<!--    <div class="header-content">-->
+<!--        .......-->
+<!--    </div>-->
 
 </header>
 <main> Main
